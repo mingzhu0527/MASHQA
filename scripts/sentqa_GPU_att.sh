@@ -1,12 +1,10 @@
 #!/bin/bash
 
 #### local path
-SQUAD_DIR=data/squad_sample_consec
+SQUAD_DIR=data/mash_qa
 INIT_CKPT_DIR=xlnet_cased_L-24_H-1024_A-16
-PROC_DATA_DIR=proc_data/squad_sample_consec
-MODEL_DIR=experiment/squad_sample_consec
-
-#### Use 3 GPUs, each with 8 seqlen-512 samples
+PROC_DATA_DIR=proc_data/squad_consec
+MODEL_DIR=experiment/squad_consec
 
 python3 run_sentqa_att_sparse_hier.py \
   --use_tpu=False \
@@ -17,8 +15,8 @@ python3 run_sentqa_att_sparse_hier.py \
   --output_dir=${PROC_DATA_DIR} \
   --init_checkpoint=${INIT_CKPT_DIR}/xlnet_model.ckpt \
   --model_dir=${MODEL_DIR} \
-  --train_file=${SQUAD_DIR}/sample_train_webmd_squad_v2_consec.json \
-  --predict_file=${SQUAD_DIR}/sample_val_webmd_squad_v2_consec.json \
+  --train_file=${SQUAD_DIR}/train_webmd_squad_v2_consec.json \
+  --predict_file=${SQUAD_DIR}/val_webmd_squad_v2_consec.json \
   --uncased=False \
   --max_seq_length=512 \
   --do_train=True \
