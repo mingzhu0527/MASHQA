@@ -3,7 +3,7 @@
 #### local path
 SQUAD_DIR=data/squad
 INIT_CKPT_DIR=xlnet_cased_L-24_H-1024_A-16
-PROC_DATA_DIR=proc_data/squad_full_newest #squad_consec_small squad_consec squad_full_newest
+PROC_DATA_DIR=proc_data/squad_consec #squad_consec_small squad_consec squad_full_newest
 MODEL_DIR=experiment/squad_full_att_entmax_hier_weight_10_self_att
 # MODEL_DIR=experiment/squad_consec_att python3 run_sentqa_att_softatt_gelu.py
 # MODEL_DIR=experiment/squad_consec_f1_65 python3 run_sentqa_f1_65.py
