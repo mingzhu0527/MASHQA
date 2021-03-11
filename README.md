@@ -3,8 +3,8 @@ This is the repo for EMNLP Findings paper "[Question Answering with Long Multipl
 The dataset can be found [here](https://drive.google.com/file/d/1YJ5Pw7CoBcwKv2YYCguqLF2HQDcPMd8G/view?usp=sharing)<br />
 (If you have problem accessing the data, please email the author: mingzhu[at]vt.edu) <br />
 
-To preprocess the data:
-sh scripts/prepro_sentqa.sh
+To preprocess the data:<br />
+sh scripts/prepro_sentqa.sh<br />
 
-To train the model:
-sh scripts/sentqa_GPU.sh
+To train the model:<br />
+sh scripts/sentqa_GPU.sh<br />
